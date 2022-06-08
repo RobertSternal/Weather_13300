@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace test
 {
@@ -23,6 +24,33 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string city;
+
+            city = txtcity.Text;
+
+            string url = string.Format("http://api.weatherapi.com/v1/current.xml?key=4f1fb1a37abf44f4be1123613220706&q={0}&aqi=no", city);
+
+
+            XDocument doc = XDocument.Load(url);
+
+
+
+            string c_temperature = (string)doc.Descendants("temp_c").FirstOrDefault();
+            string f_temperature = (string)doc.Descendants("temp_f").FirstOrDefault();
+            string mph_wind = (string)doc.Descendants("wind_mph").FirstOrDefault();
+            string kph_wind = (string)doc.Descendants("wind_kph").FirstOrDefault();
+            string humidity = (string)doc.Descendants("humidity").FirstOrDefault();
+
+            txtwindm.Text = mph_wind;
+            txtwindk.Text = kph_wind;
+            txthumidity.Text = humidity;
+
+            txtctemp.Text = c_temperature;
+            txtftemp.Text = f_temperature;
         }
     }
 }

@@ -17,10 +17,18 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Wind_mph" Content="Wind speed mph" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label x:Name="Wind_kph" Content="Wind speed mph" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="City" Content="City" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="Temp_c" Content="Temp in C" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="Temp_f" Content="Temp in F" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Label x:Name="Wind_mph" Content="Wind speed mph" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="Wind_kph" Content="Wind speed kph" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="Humidity" Content="Humidity" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
         <TextBox x:Name="txtcity" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <TextBox x:Name="txtctemp" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtftemp" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="txtwindm" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtwindk" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox x:Name="txthumidity" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
         <Button Content="Show info" Height="40" Width="120" Background="LightBlue" Grid.Row="2" Grid.Column="1" Click="Button_Click"/>
     </Grid>
 </Window>
