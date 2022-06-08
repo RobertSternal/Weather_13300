@@ -23,12 +23,16 @@
         <Label x:Name="Wind_mph" Content="Wind speed mph" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label x:Name="Wind_kph" Content="Wind speed kph" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Label x:Name="Humidity" Content="Humidity" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Label x:Name="Cloud" Content="Cloud" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="Feels_temp" Content="Feels temp in C" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBox x:Name="txtcity" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <TextBox x:Name="txtctemp" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         <TextBox x:Name="txtftemp" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
         <TextBox x:Name="txtwindm" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <TextBox x:Name="txtwindk" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         <TextBox x:Name="txthumidity" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="txtcloud" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtfeelstemp" TextWrapping="Wrap" Height="30" Width="120" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         <Button Content="Show info" Height="40" Width="120" Background="LightBlue" Grid.Row="2" Grid.Column="1" Click="Button_Click"/>
     </Grid>
 </Window>

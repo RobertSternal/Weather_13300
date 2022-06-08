@@ -44,10 +44,14 @@ namespace test
             string mph_wind = (string)doc.Descendants("wind_mph").FirstOrDefault();
             string kph_wind = (string)doc.Descendants("wind_kph").FirstOrDefault();
             string humidity = (string)doc.Descendants("humidity").FirstOrDefault();
+            string cloud = (string)doc.Descendants("cloud").FirstOrDefault();
+            string feels_temp = (string)doc.Descendants("feelslike_c").FirstOrDefault();
 
             txtwindm.Text = mph_wind;
             txtwindk.Text = kph_wind;
             txthumidity.Text = humidity;
+            txtcloud.Text = cloud;
+            txtfeelstemp.Text = feels_temp;
 
             txtctemp.Text = c_temperature;
             txtftemp.Text = f_temperature;
